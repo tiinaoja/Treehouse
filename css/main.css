@@ -1,0 +1,235 @@
+/***************************
+GENERAL
+***************************/
+
+body {
+    display: flex;
+    display: -webkit-flex;
+    min-height: 100vh;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    -webkit-align-items: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#wrapper{
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 5%;
+    flex: 10;
+    -webkit-flex: 10;
+}
+
+img{
+    max-width: 100%;
+}
+
+h3{
+    margin: 0 0 1em 0;
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+#text{
+    text-align: center;
+}
+
+/***************************
+COLORS
+***************************/
+
+body {
+    background-image: url(../img/web09.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*logo color*/
+h1, h2 {
+    color: #ffe0cc;
+}
+
+/*color of nav link*/
+nav a, nav a:visited {
+    color: #ffe0cc;
+ }
+
+/*selected nav link*/
+nav a.selected, nav a:hover {
+    color: #ffa366;
+}
+
+a {
+    color: #ffe0cc;
+}
+
+section {
+    color: #ffe0cc;
+}
+
+/******************************************
+GALLERY
+******************************************/
+#gallery{
+    margin: auto;
+    width: 45%;
+    margin-top: 20px;
+    
+}
+
+/******************************************
+HEADING
+******************************************/
+header{
+    /*float: left;*/
+    margin: 0 0 30px 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+    flex: 2;
+    -webkit-flex: 2;
+}
+
+#logo{
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  margin: -5px 0 0;
+  font-size: 1em;
+  font-weight: normal;
+ }
+
+
+
+/******************************************
+NAVIGATION
+******************************************/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li{
+  display: inline-block;
+}
+
+nav a{
+  font-weight: normal;
+  padding: 15px 18px;
+}
+
+/******************************************
+ANIMATION
+******************************************/
+
+.line {
+    clear: left;
+    width: 50%;
+    height: 1px;
+    background-color: #ffa366;
+    /*margin-top: 2%;*/
+    position: absolute;
+    -webkit-animation-name: animation;
+    -webkit-animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animation {
+    from {left: 0%;}
+    to {left: 23.5%;}
+}
+
+@keyframes animation {
+    from {left: 0%;}
+    to {left: 23.5%;}
+}
+  
+
+/******************************************
+FOOTER
+******************************************/
+
+footer {
+    font-size: 0.75em;
+    text-align: center;
+    clear:both;
+    padding-top: 50px;
+    color: #ffe0cc;
+    flex: 1;
+    -webkit-flex: 1;
+    
+}
+
+.social-icon{
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+/******************************************
+PAGE ABOUT
+******************************************/
+.profile-image{
+    clear: both;
+    display: block;
+    max-width: 150px;
+    margin: 0 auto 30px;
+    border-radius: 100%; 
+    border-color: #ffa366;
+}
+
+/******************************************
+PAGE CONTACT
+******************************************/
+
+.contact-info{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+ }
+
+.contact-info a{
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;  
+}
+
+.contact-info li.phone a{
+  background-image: url('../img/phone3.png');
+}
+
+.contact-info li.mail a{
+  background-image: url('../img/mail3.png');
+}
+
+.contact-info li.twitter a{ 
+  background-image: url('../img/tw3.png');
+}
